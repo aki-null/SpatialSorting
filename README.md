@@ -133,4 +133,4 @@ Other Uses
 
 For example, it incurs a significant performance penalty when branching to implement 3D point culling.
 
-We can pass a Spatially sorted list of 3D points to the shader to have nearby points scheduled in the same warp, resulting in a higher chance of all threads taking the same branch.
+We can pass a spatially sorted list of 3D points to the shader to have nearby points scheduled in the same warp, resulting in a higher chance of all threads taking the same branch.
