@@ -97,9 +97,10 @@ public class PointOrdering : MonoBehaviour
 ```
 </details>
 
-# API
+API
+---
 
-## Extension Methods
+### Extension Methods
 
 ```c#
 GameObject[] objects = ...; // can be a list as well
@@ -117,7 +118,7 @@ objects.SpatialSortFast(SpaceMapping.XYZ, bounds);
 
 Extension methods are currently available for GameObject and Vector3
 
-## Comaprer
+### Comaprer
 
 ```c#
 var bounds = objects.Bounds(); // prepare this beforehand if performance matters
@@ -127,7 +128,8 @@ Array.Sort(objects, comparer);
 
 Please note that bounds do not need to be exact, although it has to encapsulate all input points.
 
-# Other Uses
+Other Uses
+---
 
 For example, it incurs a significant performance penalty when branching to implement 3D point culling.
 
